@@ -49,13 +49,12 @@ nav ul li{
 }
 
 nav ul li a{
-    display: block;
+    
 	/* let's change that ugly default anchor tag styling */
 	text-decoration: none;
 	color: #fff;
-    position: relative;
+    
 }
-
 .front{
 	background:url(/images/bgtrees.jpg) 50% 50% no-repeat;
     background-size: cover
@@ -67,17 +66,8 @@ body:hover .front{
 	transform: perspective(700px) scale(0.5) translateX(-16.66%) rotateY(25deg);
 	/* hover over the text to check out the effect! */
 }
+body:active .front{
+	transform: perspective(700px) scale(0.5) translateX(-16.66%) rotateY(25deg);
+	/* hover over the text to check out the effect! */
+}
 
-/*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
-.ink {
-	display: block; position: absolute;
-	background: #fff;
-	border-radius: 100%;
-	transform: scale(0);
-}
-/*animation effect*/
-.ink.animate {animation: ripple 0.65s linear;}
-@keyframes ripple {
-	/*scale the element to 250% to safely cover the entire link and fade it out*/
-	100% {opacity: 0; transform: scale(2.5);}
-}
