@@ -29,12 +29,22 @@ h1{
 	bottom: 0;
 	/* create some styling to smooth out the transition when we hover over the body of the page */
 	transition: transform .4s;
+    -o-transition: transform .4s;
+    -moz-transition: transform .4s;
+    -webkit-transition: transform .4s;
 	transform: perspective(800px) scale(1) translateX(0) rotateY(0);
-	transform-style: preserve-3d;
+    -o-transform: perspective(800px) scale(1) translateX(0) rotateY(0);
+    -moz-transform: perspective(800px) scale(1) translateX(0) rotateY(0);
+    -webkit-transform: perspective(800px) scale(1) translateX(0) rotateY(0);
+   	transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    
 }
 
 nav{
-	vertical-align: center;
+	align-items: baseline;
 }
 
 nav ul{
@@ -50,7 +60,7 @@ nav ul li{
 
 nav ul li a{
     
-	/* let's change that ugly default anchor tag styling */
+	/* anchor tag styling */
 	text-decoration: none;
 	color: #fff;
     
