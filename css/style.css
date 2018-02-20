@@ -1,83 +1,59 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 body{
-	font-family: 'Roboto Condensed';
-	text-transform: uppercase;
-	background:url(/images/ales-krivec-192941.jpg) 51% 51% no-repeat;
-    height: 100%;
-	overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: url(/images/background2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.box{
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 200;
+
+}
+.box h1 a{
+    color:white;
+    text-decoration: none;
+    transition: all ease-in-out 300ms;
+}
+.box h1 a:hover{
+    color: #b9b9b9;
+}
+.box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+
+}
+.box p{
+    text-align: justify;
 }
 
-h1{
-    font-family: 'Montserrat';
-	font-size: 35px;
-	text-align: center;
-    color: #fff
-
+.box h2{
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 200;
 }
-
-.layer{
-	display: flex;
-	/* the following two css selectors aren't recognized by all browsers -- you may need to use some -webkit- prefixes */
-	align-items: center;
-	justify-content: center;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	/* create some styling to smooth out the transition when we hover over the body of the page */
-	transition: transform .4s;
-    -o-transition: transform .4s;
-    -moz-transition: transform .4s;
-    -webkit-transition: transform .4s;
-	transform: perspective(800px) scale(1) translateX(0) rotateY(0);
-    -o-transform: perspective(800px) scale(1) translateX(0) rotateY(0);
-    -moz-transform: perspective(800px) scale(1) translateX(0) rotateY(0);
-    -webkit-transform: perspective(800px) scale(1) translateX(0) rotateY(0);
-   	transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    
+.box h2 a{
+  color:white;
+  text-decoration: none;
+  transition: all ease-in-out 300ms;
 }
-
-nav{
-	vertical-align: middle;
+.box h2 a:hover{
+  color: #b9b9b9;
 }
-
-nav ul{
-	padding-left: 66.66%;
-	font-size: larger;
-	/* font-size: larger sets the font-size to exactly one size larger than the font size of the parent element */
-	line-height: 2;
-}
-
-nav ul li{
-	list-style-type: none;
-}
-
-nav ul li a{
-    
-	/* anchor tag styling */
-	text-decoration: none;
-	color: #fff;
-    
-}
-.front{
-	background:url(/images/bgtrees.jpg) 50% 50% no-repeat;
-    background-size: cover
-}
-
-/* this next line of CSS creates the animation that occurs when we hover over the page. it uses transform to change the perspective, scale, and positioning of the .front section to reveal the new nav hiding beneath it */
-
-
-body:hover .front{
-	transform: perspective(700px) scale(0.5) translateX(-16.66%) rotateY(25deg);
-    -o-transform: perspective(700px) scale(0.5) translateX(-16.66%) rotateY(25deg);
-    -moz-transform: perspective(700px) scale(0.5) translateX(-16.66%) rotateY(25deg);
-    -webkit-transform: perspective(700px) scale(0.5) translateX(-16.66%) rotateY(25deg);
-	/* hover over the text to check out the effect! */
-}
-
